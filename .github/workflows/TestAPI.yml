@@ -14,4 +14,4 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "EcomAPIcollection.postman_collection.json " -e "QAtest.postman_environment.json"
+          postman collection run "EcomAPIcollection.json " -e "QAtest.json"
